@@ -1,0 +1,30 @@
+[
+  {
+    "id": 20221,
+    "name": "Asoom",
+    "job": "Hamata's Friend",
+    "img": "/images/avatar-02.png",
+    "feedback": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim blanditiis quaerat voluptas dolores reiciendis commodi impedit sunt quasi, nemo maxime! Lorem ipsum"
+  },
+  {
+    "id": 20222,
+    "name": "Hkmkm",
+    "job": "Hamata's Friend",
+    "img": "/images/avatar-03.png",
+    "feedback": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim blanditiis quaerat voluptas dolores reiciendis"
+  },
+  {
+    "id": 20223,
+    "name": "Loma",
+    "job": "Hamata's Friend",
+    "img": "/images/avatar-05.png",
+    "feedback": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim blanditiis quaerat voluptas dolores reiciendis commodi impedit sunt quasi, nemo maxime! Lorem ipsum"
+  },
+  {
+    "id": 20224,
+    "name": "Hamata",
+    "job": "Just Hamata",
+    "img": "/images/avatar-06.png",
+    "feedback": "Lorem ipsum dolor sit amet consectetur adipisicing elitm consectetur adipisicing elitmc onsectetur adipisicing elitm"
+  }
+]

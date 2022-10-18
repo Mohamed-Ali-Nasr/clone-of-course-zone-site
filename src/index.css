@@ -1,13 +1,144 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+  background-color: #110726;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #935cec;
+  box-shadow: 0px 0px 30px 30px #935cec;
+}
+
+footer,
+section {
+  overflow: hidden;
+}
+
+.swiper-pagination-bullet {
+  background: #ff87dd !important;
+}
+
+#feedbacks
+  .swiper-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet,
+#feedbacks
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin-bottom: -70px;
+}
+
+@layer components {
+  .container {
+    @apply w-[92%] md:w-[85%] xl:w-3/4 h-full m-auto;
+  }
+
+  .fx-center {
+    @apply flex items-center justify-center;
+  }
+
+  .btn {
+    @apply w-fit text-[1.6rem] font-bold tracking-[1px] py-2 px-[40px] rounded-[5px] duration-300 
+     hover:shadow-[0px_0px_20px_0px_rgba(255,135,221,0.53)] bg-gradient-to-tr from-[#fc5c98] to-[#ff7757] text-[#ffffff];
+  }
+
+  .main-title {
+    @apply text-[2.4rem] text-[#ffffff] font-bold h-[80px] pt-[30px] flex justify-center md:justify-start md:pt-[10px] md:h-full md:text-[2.7rem];
+  }
+
+  section,
+  footer {
+    @apply overflow-hidden;
+  }
+
+  .ul-scroll::-webkit-scrollbar {
+    width: 00.6em;
+    background-color: #110726;
+  }
+  .ul-scroll::-webkit-scrollbar-thumb {
+    background-color: #935cec;
+  }
+}
+
+/* Animations 😁 */
+
+/* bg-animation 😏 */
+@keyframes bg-animate {
+  0% {
+    bottom: -115px;
+    left: 50%;
+    transform: rotate(-4deg) translateX(-45%);
+    border-radius: 120px 20px 0px 0px;
+    box-shadow: 0px 0px 60px 0px #fc5c9756;
+  }
+  100% {
+    box-shadow: 0px 0px 0px 0px #ff87dd58;
+    bottom: -115px;
+    left: 50%;
+    transform: rotate(4deg) translateX(-52%);
+    border-radius: 20px 120px 0px 0px;
+  }
+}
+@keyframes bg-animate-lg {
+  0% {
+    bottom: -110px;
+    transform: rotate(-5deg);
+    border-radius: 120px 20px 0px 0px;
+    right: 3%;
+    box-shadow: 0px 0px 60px 0px #fc5c9756;
+  }
+  100% {
+    box-shadow: 0px 0px 0px 0px #ff87dd58;
+    bottom: -100px;
+    transform: rotate(5deg);
+    right: 7%;
+    border-radius: 20px 120px 0px 0px;
+  }
+}
+@keyframes bg-animate-xl {
+  0% {
+    bottom: -110px;
+    transform: rotate(-5deg);
+    border-radius: 120px 20px 0px 0px;
+    right: 13%;
+    box-shadow: 0px 0px 60px 0px #fc5c9756;
+  }
+  100% {
+    box-shadow: 0px 0px 0px 0px #ff87dd58;
+    bottom: -100px;
+    transform: rotate(5deg);
+    right: 17%;
+    border-radius: 20px 120px 0px 0px;
+  }
+}
+
+/* shadow-animation 😈 */
+@keyframes shadow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* model-animation 😊  */
+@keyframes model {
+  0% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
 }
