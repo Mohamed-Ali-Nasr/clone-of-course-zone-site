@@ -7,8 +7,6 @@ const Navigator = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(1);
 
   const linksScroll = (query: MediaQueryList | MediaQueryListEvent) => {
-    console.log(query.matches);
-
     if (query.matches) {
       // If media query matches
       window.onscroll = () => {
